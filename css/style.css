@@ -5,7 +5,7 @@ body {
 
   margin: auto;
 
-  background-image: url("/images/Jellyfish.jpg");
+  background-image: url(..images/Jellyfish.jpg);
 
   font-family: 'Press Start 2P', cursive;
 
