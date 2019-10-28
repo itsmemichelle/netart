@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Liu+Jian+Mao+Cao|Press+Start+2P&display=swap");
+
+body {
+  max-width: 1000px;
+
+  margin: auto;
+
+  background-image: url("/images/Jellyfish.jpg");
+
+  font-family: 'Press Start 2P', cursive;
+
+
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 20pt;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 18pt;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  display: inline;
+  text-align: center;
+}
+
+p1 {
+  color: white;
+  font-family: 'Liu Jian Mao Cao', cursive;
+  text-align: center;
+
+}
+
+a {
+  color: Black;
+  font-size: 18pt;
+  font-family: 'Press Start 2P',
+  text-decoration: none;
+  text-align: center;
+}
+<style>
+a:hover {
+  color: Orange;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+function startGame() {
+  myGamePiece = new component(30, 30, "red", 10, 120);
+  myGamePiece.gravity = 0.05;
+  myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+  myGameArea.start();
+}
